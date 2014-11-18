@@ -44,6 +44,13 @@ npm test
 node test
 ```
 
+## TODO
+
+* Add event for completion of change
+* Add upsert/delete functions
+* Support promises
+* Add default `baseDomain` to options/integrate with actions.
+
 [travis-badge-url]: https://travis-ci.org/knownasilya/aws-subdomain
 [travis-badge]: https://travis-ci.org/knownasilya/aws-subdomain.svg?branch=master
 [npm-badge-url]: https://nodei.co/npm/aws-subdomain/
