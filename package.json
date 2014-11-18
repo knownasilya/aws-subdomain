@@ -1,0 +1,40 @@
+{
+  "name": "aws-subdomain",
+  "version": "0.1.0",
+  "description": "Create subdomains for AWS without diving into the AWS SDK",
+  "main": "lib",
+  "bin": {
+    "aws-subdomain": "bin/aws-subdomain"
+  },
+  "scripts": {
+    "test": "node test | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/knownasilya/aws-subdomain.git"
+  },
+  "keywords": [
+    "aws",
+    "subdomain",
+    "create",
+    "cname",
+    "wrapper"
+  ],
+  "author": "Ilya Radchenko <ilya@burstcreations.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/knownasilya/aws-subdomain/issues"
+  },
+  "homepage": "https://github.com/knownasilya/aws-subdomain",
+  "devDependencies": {
+    "tap-spec": "^1.0.1",
+    "tape": "^3.0.3"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.0.27",
+    "extend": "^2.0.0",
+    "lodash.find": "^2.4.1",
+    "ltcdr": "^2.2.1",
+    "minimist": "^1.1.0"
+  }
+}
