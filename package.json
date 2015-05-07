@@ -7,7 +7,8 @@
     "aws-subdomain": "bin/aws-subdomain"
   },
   "scripts": {
-    "test": "node test | tap-spec"
+    "test": "node test | tap-spec",
+    "test-coverage": "istanbul cover test/index.js --report lcovonly | tap-spec"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
   },
   "homepage": "https://github.com/knownasilya/aws-subdomain",
   "devDependencies": {
+    "istanbul": "^0.3.13",
     "tap-spec": "^1.0.1",
     "tape": "^3.0.3"
   },
