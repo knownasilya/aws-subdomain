@@ -5,6 +5,7 @@ Create subdomains for AWS without diving into the AWS SDK
 
 [![NPM][npm-badge]][npm-badge-url]  
 [![Build Status][travis-badge]][travis-badge-url]
+[![Coverage Status][coveralls-badge]][coveralls-badge-url]  
 
 ## Usage
 
@@ -56,3 +57,5 @@ node test
 [travis-badge]: https://travis-ci.org/knownasilya/aws-subdomain.svg?branch=master
 [npm-badge-url]: https://nodei.co/npm/aws-subdomain/
 [npm-badge]: https://nodei.co/npm/aws-subdomain.png?downloads=true&stars=true
+[coveralls-badge]: https://coveralls.io/repos/knownasilya/aws-subdomain/badge.svg?branch=master
+[coveralls-badge-url]: https://coveralls.io/r/knownasilya/aws-subdomain?branch=master
