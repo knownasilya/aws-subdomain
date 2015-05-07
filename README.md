@@ -1,9 +1,10 @@
-aws-subdomain [![Build Status][travis-badge]][travis-badge-url]
+aws-subdomain
 =============
 
 Create subdomains for AWS without diving into the AWS SDK
 
-[![NPM][npm-badge]][npm-badge-url]
+[![NPM][npm-badge]][npm-badge-url]  
+[![Build Status][travis-badge]][travis-badge-url]
 
 ## Usage
 
