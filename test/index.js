@@ -26,7 +26,7 @@ test('domain split', function (t) {
 
 test('create correct change object', function (t) {
   var change = createChange('upsert', 'beta.blob.com', 'test1');
-  
+
   t.same(change, {
     Action: 'UPSERT',
     ResourceRecordSet: {
