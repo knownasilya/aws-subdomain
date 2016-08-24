@@ -1,6 +1,6 @@
 {
   "name": "aws-subdomain",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Create subdomains for AWS without diving into the AWS SDK",
   "main": "lib",
   "bin": {
