@@ -13,6 +13,20 @@ test('hosted zone id', function (t) {
   t.end();
 });
 
+test('hosted zone id - not set', function (t) {
+  var id = splitZoneId();
+
+  t.equal(id, undefined);
+  t.end();
+});
+
+test('hosted zone id - weird', function (t) {
+  var id = splitZoneId('/');
+
+  t.equal(id, '');
+  t.end();
+});
+
 test('domain split', function (t) {
   var split = splitDomain('my.super.fancy.domain.com');
 
@@ -29,6 +43,25 @@ test('create correct change object', function (t) {
 
   t.same(change, {
     Action: 'UPSERT',
+    ResourceRecordSet: {
+      Name: 'test1.beta.blob.com',
+      Type: 'CNAME',
+      ResourceRecords: [
+        {
+          Value: 'beta.blob.com'
+        },
+      ],
+      TTL: 3600
+    }
+  });
+  t.end();
+});
+
+test('create correct change object - no type', function (t) {
+  var change = createChange('beta.blob.com', 'test1');
+
+  t.same(change, {
+    Action: 'CREATE',
     ResourceRecordSet: {
       Name: 'test1.beta.blob.com',
       Type: 'CNAME',
