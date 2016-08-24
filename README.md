@@ -20,10 +20,14 @@ var subdomain = require('aws-subdomain')({
 subdomain.create('i.wear.sho.es', function (err, result) {
   // handle error/result
 });
+
+subdomain.delete('i.wear.sho.es', function (err, result) {
+  // handle error/result
+});
 ```
 
 We will find the correct HostedZoneId based on the root domain, e.g. 'sho.es'
-and will create the subdomain for you.
+and will create/delete the subdomain for you.
 
 ## CLI
 
@@ -49,7 +53,7 @@ node test
 ## TODO
 
 * Add event for completion of change
-* Add upsert/delete functions
+* Add upsert functions
 * Support promises
 * Add default `baseDomain` to options/integrate with actions.
 
