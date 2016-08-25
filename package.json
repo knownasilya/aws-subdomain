@@ -19,7 +19,8 @@
     "subdomain",
     "create",
     "cname",
-    "wrapper"
+    "wrapper",
+    "route53"
   ],
   "author": "Ilya Radchenko <ilya@burstcreations.com>",
   "license": "ISC",
