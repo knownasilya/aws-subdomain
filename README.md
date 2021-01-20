@@ -1,11 +1,10 @@
-aws-subdomain
-=============
+# aws-subdomain
 
 Create subdomains for AWS without diving into the AWS SDK
 
 [![NPM][npm-badge]][npm-badge-url]  
 [![Build Status][travis-badge]][travis-badge-url]
-[![Coverage Status][coveralls-badge]][coveralls-badge-url]  
+[![Coverage Status][coveralls-badge]][coveralls-badge-url]
 
 ## Usage
 
@@ -14,7 +13,7 @@ First install this module with `npm install aws-subdomain --save`.
 ```js
 var subdomain = require('aws-subdomain')({
   accessKeyId: 'your-id-here',
-  secretAccessKey: 'your-secret-here'
+  secretAccessKey: 'your-secret-here',
 });
 
 subdomain.create('i.wear.sho.es', function (err, result) {
@@ -38,7 +37,7 @@ aws-subdomain new.shiny.po.ny -i [awsAccessKeyId] -s [awsSecretAccessKey]
 
 Can also pass `-a` with 'upsert', or 'delete'. The default is to 'create'.
 
-By default the AWS credentials come from environment variables 
+By default the AWS credentials come from environment variables
 `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`, but can be
 overridden with `-i` and `-s` respectively.
 
@@ -52,10 +51,10 @@ node test
 
 ## TODO
 
-* Add event for completion of change
-* Add upsert functions
-* Support promises
-* Add default `baseDomain` to options/integrate with actions.
+- Add event for completion of change
+- Add upsert functions
+- Support promises
+- Add default `baseDomain` to options/integrate with actions.
 
 [travis-badge-url]: https://travis-ci.org/knownasilya/aws-subdomain
 [travis-badge]: https://travis-ci.org/knownasilya/aws-subdomain.svg?branch=master

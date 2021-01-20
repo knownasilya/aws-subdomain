@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "node test | tap-spec",
-    "test-coverage": "istanbul cover test/index.js --report lcovonly | tap-spec"
+    "test-coverage": "nyc --reporter=text node test/index.js | tap-spec",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -29,15 +30,16 @@
   },
   "homepage": "https://github.com/knownasilya/aws-subdomain",
   "devDependencies": {
-    "istanbul": "^0.4.5",
-    "tap-spec": "^4.1.1",
-    "tape": "^4.6.0"
+    "nyc": "^15.1.0",
+    "standard-version": "^9.1.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.1.1"
   },
   "dependencies": {
-    "aws-sdk": "^2.0.27",
-    "extend": "^3.0.0",
+    "aws-sdk": "^2.829.0",
+    "extend": "^3.0.2",
     "lodash.find": "^4.6.0",
     "ltcdr": "^2.2.1",
-    "minimist": "^1.1.0"
+    "minimist": "^1.2.5"
   }
 }
